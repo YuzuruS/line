@@ -63,5 +63,7 @@ $app->post('/callback', function (Request $request) use ($app) {
     ]);
     curl_exec($ch);
     curl_close($ch);
+
+    return 'OK';
 });
 $app->run();
